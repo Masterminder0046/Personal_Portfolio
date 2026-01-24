@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureFolio | Student Developer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-content">
+            <h2 class="glitch" data-text="INITIALIZING SYSTEM...">INITIALIZING SYSTEM...</h2>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <p class="loading-text">Loading Assets... <span id="percent">0%</span></p>
+        </div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="background-container">
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">DEV<span class="neon-text">.CORE</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link highlight-btn">Contact</a></li>
+                <!-- Theme Toggle -->
+                <li class="theme-switch-wrapper">
+                   <i class="fa-solid fa-sun" id="theme-icon"></i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="text-area">
+                <div class="badge">Available for Work</div>
+                <h1 class="hero-title">Hello, <br> I'm <span class="glitch-name" data-text="Alex Dev">Sheik Mohamed</span></h1>
+                <h2 class="typing-text">I am a <span class="txt-rotate" data-period="2000" data-rotate='[ "Developer.", "Designer.", "Innovator." ]'></span></h2>
+                <p class="hero-subtitle">Building the future of web experiences with modern technologies and creative design.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="btn btn-secondary">Download CV <i class="fa-solid fa-download"></i></a>
+                </div>
+                
+              
+            </div>
+            <div class="image-area">
+                <div class="profile-card float-anim">
+                    <div class="card-content">
+                        <div class="avatar-frame">
+                            <img src="https://ui-avatars.com/api/?name=Sheik+Mohamed&background=00f3ff&color=000&size=256" alt="Profile" class="avatar-img">
+                        </div>
+                        <h3>Sheik Mohamed</h3>
+                        <p>Full Stack Developer</p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span>20+</span>
+                                <p>Projects</p>
+                            </div>
+                            <div class="stat-item">
+                                <span>1+</span>
+                                <p>Years</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Scroll</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About <span class="neon-text">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-card glass-card fade-in-left">
+                    <h3>My Journey</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="date">2024 - Present</span>
+                            <h4>Advanced AI & Web Dev</h4>
+                            <p>Specializing in agentic workflows and immersive UIs.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">2025 - 2026</span>
+                            <h4>Frontend Basics</h4>
+                            <p>Mastered HTML, CSS, and JS fundamentals.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">2022</span>
+                            <h4>Started Coding</h4>
+                            <p>Wrote my first "Hello World" in Python.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content fade-in-right">
+                    <p class="bio-text">
+                        I am a passionate computer science student with a flair for creating visually stunning and highly functional digital experiences. 
+                        I blend <span class="highlight">creative design</span> with <span class="highlight">robust engineering</span> to solve real-world problems.
+                    </p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="label">Age:</span>
+                            <span class="val">21 Years</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Location:</span>
+                            <span class="val">Villupuram, Tamil Nadu</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Email:</span>
+                            <span class="val">sheikmohamed0046@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">My <span class="neon-text">Arsenal</span></h2>
+            
+            <div class="skills-wrapper">
+                
+                <!-- Tech Stack Cards -->
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card" style="--color: #e34c26">
+                            <i class="fa-brands fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-card" style="--color: #264de4">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-card" style="--color: #f7df1e">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-card" style="--color: #61dafb">
+                            <i class="fa-brands fa-react"></i>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend & Tools</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card" style="--color: #3776ab">
+                            <i class="fa-brands fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-card" style="--color: #339933">
+                            <i class="fa-brands fa-node"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-card" style="--color: #f05032">
+                            <i class="fa-brands fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-card" style="--color: #ffffff">
+                            <i class="fa-solid fa-flask"></i>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress Bars -->
+                <div class="skill-meters">
+                    <div class="meter-item">
+                        <div class="label">
+                            <span>UI/UX Design</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 90%; --color: #bc13fe;"></div>
+                        </div>
+                    </div>
+                    <div class="meter-item">
+                        <div class="label">
+                            <span>Web Development</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 85%; --color: #00f3ff;"></div>
+                        </div>
+                    </div>
+                    <div class="meter-item">
+                        <div class="label">
+                            <span>Problem Solving</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 95%; --color: #0aff0a;"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured <span class="neon-text">Projects</span></h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card tilt-card">
+                    <div class="project-img-wrapper">
+                        <!-- Placeholder using gradient since no image provided -->
+                        <div class="placeholder-img p1"></div> 
+                        <div class="overlay">
+                            <a href="#" class="view-btn"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="github-btn"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Lightweight Smart Support System</h3>
+                        <p class="desc">A smart, lightweight helpdesk system that automates ticket handling and supports multilingual communication.</p>
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span> 
+                            <span>Flask</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card tilt-card">
+                    <div class="project-img-wrapper">
+                        <div class="placeholder-img p2"></div>
+                        <div class="overlay">
+                            <a href="#" class="view-btn"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="github-btn"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>QRBill – Smart Retail Billing Web App</h3>
+                        <p class="desc">A modern QR-based billing system with inventory tracking, GST support, offline mode, and digital invoice sharing.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card tilt-card">
+                    <div class="project-img-wrapper">
+                        <div class="placeholder-img p3"></div>
+                        <div class="overlay">
+                            <a href="#" class="view-btn"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" class="github-btn"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Glassmorphism Login/Signup UI Project</h3>
+                        <p class="desc">A creative authentication UI with animated background, neon buttons, and form validation using JavaScript.</p>
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section">
+        <div class="container">
+            <h2 class="section-title">Awards & <span class="neon-text">Certs</span></h2>
+            <div class="cert-slider-wrapper">
+                <div class="cert-track">
+                    
+                    <div class="cert-card">
+                        <div class="icon-box"><i class="fa-solid fa-award"></i></div>
+                        <h4>Paper Presentation Winner</h4>
+                        <p>National Level Technical Symposium 2024</p>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="icon-box"><i class="fa-solid fa-certificate"></i></div>
+                        <h4>Google Cloud Engineering Certified</h4>
+                        <p>Naan Mudhalvan Course</p>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+                        <h4>Full Stack With Python Certified</h4>
+                        <p>Coderz Academy</p>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h4>Best Logo Desginer Awards</h4>
+                        <p>National Level Technical Symposium 2023</p>
+                    </div>
+
+                    <!-- Duplicate for infinite scroll loop visual -->
+                    <div class="cert-card">
+                        <div class="icon-box"><i class="fa-solid fa-award"></i></div>
+                        <h4>Best Web Desginer Awards</h4>
+                        <p>National Level Technical Symposium 2024</p>
+                    </div>
+                     <div class="cert-card">
+                        <div class="icon-box"><i class="fa-solid fa-certificate"></i></div>
+                        <h4>Frontend Developer Intership</h4>
+                        <p>Adiz Codez</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container contact-container">
+            <div class="contact-text">
+                <h2 class="section-title text-left">Let's <span class="neon-text">Connect</span></h2>
+                <p>Have a project in mind or just want to chat? Drop me a message.</p>
+                <div class="contact-details">
+                    <div class="c-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>contact@</span>
+                    </div>
+                    <div class="c-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>New York, NY</span>
+                    </div>
+                </div>
+                <div class="social-circles">
+                    <a href="https://github.com/Masterminder0046" class="s-circle"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sheik-tech/" class="s-circle"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/_hash_tech/" class="s-circle"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <form class="contact-form glass-card">
+                <div class="input-group">
+                    <input type="text" required>
+                    <label>Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea required></textarea>
+                    <label>Message</label>
+                </div>
+                <button type="submit" class="btn btn-primary submit-btn">Send Message <i class="fa-regular fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sheik Mohamed. Built with <i class="fa-solid fa-heart neon-text"></i> and Code.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
