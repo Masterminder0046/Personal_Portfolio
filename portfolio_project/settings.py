@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-some-secret-key-replace-in-prod'
 DEBUG = True
-ALLOWED_HOSTS = ['https://personal-portfolio-jc2s.onrender.com']
+ALLOWED_HOSTS = ['personal-portfolio-jc2s.onrender.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -19,15 +19,15 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
-
 ROOT_URLCONF = 'portfolio_project.urls'
 
 TEMPLATES = [
@@ -58,7 +58,7 @@ DATABASES = {
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
-USE_TZ = True'
+USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
@@ -72,4 +72,4 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'sheikmohamed0046@gmail.com' # Replace with actual email
-EMAIL_HOST_PASSWORD = 'feeqpskedyimdzyh'
+EMAIL_HOST_PASSWORD = 'nheofhywqyrfhirv'
