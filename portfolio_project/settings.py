@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-some-secret-key-replace-in-prod'
 DEBUG = True
-ALLOWED_HOSTS = ['personal-portfolio-jc2s.onrender.com']
+ALLOWED_HOSTS = ['sheik-personal-portfolio-f8we.onrender.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
